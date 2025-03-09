@@ -7,7 +7,7 @@ param location string = resourceGroup().location
 @description('Log Analytics workspace ID for diagnostic settings')
 param logAnalyticsId string
 
-var keyvaultName = '${nameprefix}kv'
+var keyvaultName = '${nameprefix}kv2025'
 
 resource keyvault 'Microsoft.KeyVault/vaults@2023-07-01' = {
   name: keyvaultName
