@@ -46,7 +46,7 @@ module network './resources/network.bicep' = {
 // The Keyvault deployment only deploys the Keyvault resource first. 
 // Various other deployments can later add secrets and/or role assignments to it.
 module keyvault './resources/keyvault.bicep' = {
-  name: '${rg.name}-keyvault'
+  name: '${rg.name}-keyvault2025'
   scope: rg
   params: {
     nameprefix: toLower(name)
