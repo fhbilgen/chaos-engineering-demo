@@ -19,7 +19,7 @@ var experimentName = '${nameprefix}chaos-keyvault-deny'
 var chaosKvSelectorId = guid('${nameprefix}-chaos-kv-selector-id')
 
 resource keyvault 'Microsoft.KeyVault/vaults@2023-07-01' existing = {
-  name: '${nameprefix}kv'
+  name: '${nameprefix}kv2025'
 }
 
 resource chaoskvtarget 'Microsoft.Chaos/targets@2022-10-01-preview' = {
